@@ -364,6 +364,13 @@ def make(parser):
     )
 
     version.add_argument(
+        '--repo-only',
+        dest='repo_only',
+        action='store_true',
+        help='install the repo (or list) file only',
+    )
+
+    version.add_argument(
         '--no-adjust-repos',
         dest='adjust_repos',
         action='store_false',
